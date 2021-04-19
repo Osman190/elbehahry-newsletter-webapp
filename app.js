@@ -53,7 +53,7 @@ app.post("/failure", function(req, res) {
 })
 
 
-app.listen(PORT || 3000, () => {console.log(`Server is Running on ${PORT}`)})
+app.listen(process.env.PORT || 3000, () => {console.log(`Server is Running on ${PORT}`)})
 
 // API KEY
 // 399830759a0c76c6eabc4fcafeb9839c-us1
